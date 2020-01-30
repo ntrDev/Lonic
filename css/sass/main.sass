@@ -1,0 +1,1063 @@
+@import "bourbon/bourbon"
+
+
+$rectangle-color: #636363
+$orange-color: #ff7200
+$white-color: #ffffff
+$black-color: #000000
+$gray-color: #6f6f6f
+$fon-flag: #eeeeee
+$text-color: #444444
+$text-descr: #787878
+$border-color: #dddddd
+$footer-bg: #1a1a1a
+$footer-mnu: #999999
+$copyright-color: #dddddd
+
+
+%borders
+	border-left: 1px solid $border-color
+	border-top: 1px solid $border-color
+	border-bottom: 1px solid $border-color
+body
+	font-family: "Montserrat-Regular" , sans-serif
+	font-weight: 300
+	font-size: 16px
+	position: relative
+	line-height: 1.6
+	margin: 0
+	overflow-x: hidden
+a,a:hover,a:focus,button
+	outline: none
+a.btn
+	text-decoration: none
+ul
+	margin: 0
+	padding: 0
+ul li
+	list-style-type: none
+
+.hidden
+	display: none
+.active
+	display: block
+.container
+	width: 1170px
+	margin: 0 auto
+button.btn
+	display: block
+	width: 170px
+	height: 50px
+	background: $orange-color
+	line-height: 50px
+	letter-spacing: 2.5px
+	font-size: 0.81em
+	color: $white-color
+	border: none
+	text-transform: uppercase
+	cursor: pointer
+.section_named
+	display: block
+	width: 100%
+	font-size: 1.5em
+	line-height: 60px
+	text-transform: uppercase
+	margin-bottom: 25px
+	&::after
+		display: block
+		width: 40px
+		height: 2px
+		background: $orange-color
+		content: ''	
+/*.owl-controls
+	display: block
+	width: 100px
+	height: 50px
+	background: green
+	position: absolute
+	top: 0
+	left: 0*/
+		
+header
+	width: 100%
+	height: 935px
+	background: url(../img/head_sl_1.jpg)-265px -75px no-repeat
+	.header_wrapp
+		display: block
+		width: inherit
+		height: inherit
+		background-color: rgba(0,0,0,.7)
+		.header_info
+			display: flex
+			width: 100%
+			justify-content: space-between
+			padding-top: 50px
+			.logo,footer .footer_section .logo
+				width: 129px
+				height: 50px
+				background: url(../img/logo.png)no-repeat
+			.nav_mnu
+				display: flex
+				width: 65%
+				flex-direction: column
+				justify-content: space-around
+				ul 
+					display: flex
+					justify-content: space-between
+				ul>li>a
+					color: $white-color
+					font-size: 0.8em
+					letter-spacing: 1px
+					margin: 2% 4.7% 0 0
+					position: relative
+					text-transform: uppercase
+					text-decoration: none
+					&::last-child
+						margin: 0 0 0 0
+					&:hover
+						color: $orange-color
+						transition: color 0.5s
+					&::before
+						position: absolute
+						top: 55px
+						left: 0
+						width: 100%
+						height: 2px
+						background: transparent
+						content: ''
+					&:hover::before
+						transition: all 0.5s
+						background: $orange-color
+		.header-text
+			display: block
+			padding-top: 320px
+			text-align: center
+			color: $white-color
+			.text-gl
+				display: block
+				text-transform: uppercase
+				font-size: 3.75em
+				line-height: 60px
+				letter-spacing: 1px
+			.text-descr
+				display: block
+				line-height: 60px
+				letter-spacing: 1px
+				font-size: 0.81rem
+		.button_wrapp
+			margin-top: 75px
+			display: flex
+			justify-content: center
+#services
+	display: block
+	height: auto
+	.design_wrapp
+		display: flex
+		height: 285px
+		justify-content: space-between
+		.design
+			width: 22%
+			height: 179px
+			position: relative
+			text-align: center
+			background: url(../img/svg/polygon.svg)no-repeat
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			&:hover
+				transition: all 0.5s
+				color: $white-color
+			.web_design_ic,.web_app_ic,.web_grafic_ic,.web_game_ic
+				display: block
+				width: 40px 
+				height: 36px
+				background: url(../img/svg/ic_web-design.svg)center center no-repeat
+				margin: 0 0 25px 0 
+			.web_app_ic
+				width: 24px 
+				height: 39.32px
+				background: url(../img/svg/ic_app-design.svg)center center no-repeat
+			.web_grafic_ic
+				width: 39.42px 
+				height: 39px
+				background: url(../img/svg/ic_grafic-design.svg)center center no-repeat
+			.web_game_ic
+				width: 40px 
+				height: 39px
+				background: url(../img/svg/ic_game-design.svg)center center no-repeat
+			.design_name
+				display: block
+				color: $text-color
+				font-size: 1em
+				line-height: 60px
+				text-align: center
+				text-transform: uppercase
+				letter-spacing: 0.5px
+				&:hover
+					transition: all 0.5s
+					color: $white-color
+	.design_text_wrapp
+		display: flex
+		justify-content: space-between
+		.design_text_wrapp
+			display:flex
+			flex-direction: column
+			.design_text
+				font-size: 0.8em
+				line-height: 30px
+				color: $text-descr
+			button.btn
+				margin-top: 25px
+		.design_img_wrapp
+			display: inline-block
+			width: 50%
+			.img_macbook
+				display: inline-block
+				width: 530px
+				height: 391px
+				background: url(../img/macbook.png)no-repeat
+	.featured_work_wrapp
+		display: block
+		margin-top: 135px
+		padding-bottom: 170px
+		.featured_img_wrapp
+			display: flex
+			width: 50%
+			height: 340px
+			margin-right: 30px
+			.featured_img
+				display: block
+				width: 100%
+				.feat_img 
+					display: block
+					width: 100%	
+		.featured_work_wrapp_all
+			display: flex
+			.featured_text_wrapp
+				display: flex
+				flex-direction: column
+				.featured_named
+					font-size: 1em
+					line-height: 24px
+					text-transform: uppercase
+					color: $text-color
+					letter-spacing: 0.5px
+				.featured_text
+					font-size: 0.875em
+					line-height: 30px
+					letter-spacing: 0.25px
+					color: $text-descr
+					margin: 18px 0
+				.info_client
+					display: block
+					font-size: 0.875em
+					line-height: 30px
+					color: $text-descr
+				button.btn
+					background: none
+					color: $text-color
+					border: 1px solid $border-color
+					margin-top: 50px
+					letter-spacing: 1.5px
+					&:hover
+						background: $orange-color
+						color: $white-color
+						transition: all 0.5s
+						border: none
+#video_play
+	background: url(../img/fon_player.jpg) center -105px no-repeat
+	color: $white-color
+	.video_wrapp
+		width: 100%
+		height: 500px
+		background-color: rgba(0,0,0,.7)
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.btn_play
+		display: inline-block
+		width: 50px
+		height: 50px
+		background: url(../img/video_play.png)no-repeat
+		margin: 0 0 25px 0
+	.video_descr
+		display: block
+		font-size: 1.5em
+		line-height: 30px
+		text-transform: uppercase
+#about
+	margin: 110px 0 140px 0
+	.about_container_wrapp
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+		.about_wrapp
+			display: flex
+			width: 68%
+			flex-direction: column
+			.about_item_wrapp
+				display: flex
+				width: 100%
+				height: auto
+				margin-bottom: 60px
+			.about_flag
+				display: block
+				width: 5.313rem
+				height: 6.563rem
+				position: relative
+				@extend %borders
+				&:hover
+					background: $orange-color
+					transition: all 0.5s
+					border: none
+				&::before,&::after
+					content: ''
+					position: absolute
+					border-top: 1px solid $border-color
+					width: 3.344rem
+					height: 1px
+					left: 3.5625rem
+					border-bottom: 13px solid $white-color
+					overflow: hidden
+				&::before
+					top: 1.281rem
+					transform: rotate(78deg)
+				&::after
+					top: 4.313rem
+					transform: rotate(102deg)
+				&:hover::before,&:hover::after
+					transition: all 0.5s
+					border-bottom: 15px solid $orange-color
+					border-top: none
+			.about_item_text_wrapp
+				width: 64%
+				margin-left: 40px
+			.about_name
+				display: block
+				font-size: 1em
+				line-height: 30px
+				color: $text-color
+				letter-spacing: 0.5px
+			.about_descr
+				display: block
+				width: 81%
+				font-size: 0.875em
+				line-height: 24px
+				color: $text-descr
+				letter-spacing: 0.25px
+		.ipad_wrapp
+			.ipad_img
+				display: inline-block
+				width: 363px
+				height: 570px
+				background: url(../img/phone.png)no-repeat
+				position: relative
+			.item
+				display: block
+				width: 296px
+				height: 396px
+				margin: 47px 0 0 26px
+				overflow: hidden
+				.item_wrapp_1,.item_wrapp_2
+					display: block
+					width: 100%
+					height: 400px
+					background: url(../img/screen1.jpg)top center no-repeat
+				.item_wrapp_2
+					background: url(../img/screen2.jpg)top center no-repeat
+		.about_general_wrapp
+			display: flex
+			.about_general_goals
+				display: flex
+				width: 48%
+				justify-content: space-between
+				flex-direction: column
+				margin-right: 2%
+				.general_goals
+					display: flex
+					justify-content: space-between	
+					.goals
+						width: 170px
+						height: 45px
+						background: #eeeeee
+						margin: 0 3% 50px 0
+						position: relative
+						text-align: center
+						font-size: 0.8125em
+						line-height: 50px
+						&:last-child
+							margin-right: 0
+						&::before
+							content: ""
+							position: absolute
+							top: 45px
+							border-left: 87px solid transparent
+							border-right: 87px solid transparent
+							border-bottom: 15px solid #eeeeee
+							transform: rotate(-180deg)
+							left: -3px
+				.general_goals_descr
+					display: flex
+					flex-wrap: wrap
+					font-size: 0.8em
+					line-height: 30px
+					color: $text-descr
+					letter-spacing: 0.25px
+					.general_goals_descr_text_wrapp
+						display: flex
+						justify-content: space-between
+						width: 100%
+						.items_checkbox_wrapp
+							display: flex
+							width: 100%
+							flex-wrap: wrap
+							.items_checkbox
+								display: flex
+								width: 50%
+								align-items: center
+								justify-content: space-between
+							.general_goals_descr_text
+								display: block
+								width: 86%
+			.about_general_skill
+				display: block
+				width: 48%
+				float: right
+				font-size: 0.8125em
+				letter-spacing: 0.5px
+				color: $text-color
+				.skill_item
+					margin-bottom: 7%
+					height: 40px
+					&:last-child
+						margin-bottom: 0
+					.skill_name
+						display: inline-block
+						width: 89%
+						margin-bottom: 10px
+					.skill_procent
+						display: inline-block
+						width: 10%
+						text-align: right
+					.skill_rectangle_wrapp
+						display: flex
+						align-items: center
+						height: 8px
+						padding: 2px
+						border: 1px solid $border-color
+						.skill_rectangle_color
+							display: block
+							width: 75%
+							height: 2px
+							background: $orange-color
+						.html
+							width: 84%
+						.js
+							width: 66%
+						.wp
+							width: 92%
+#our_result
+	display: block
+	width: 100%
+	height: 500px
+	background: url(../img/fon_work_day.jpg) center -100px no-repeat
+	color: $white-color
+	.our_result_wrapp
+		width: inherit
+		height: inherit
+		background-color: rgba(0,0,0,.7)
+		.result_wrapp
+			display: flex
+			height: 500px
+			justify-content: space-between
+			align-items: center
+			.result_item
+				display: flex
+				text-align: left
+				flex-direction: column
+				.result_current
+					display: block
+					font-size: 2.8125em
+					line-height: 90px
+					letter-spacing: 0.5px
+				.result_img
+					display: block
+					width: 100%
+					margin-bottom: 5px
+					.cool,.awards,.clients,.cup
+						display: inline-block
+						width: 31px
+						height: 30px
+						background: url(../img/our_results_icons/ic_creative-design.png)no-repeat
+					.awards
+						background: url(../img/our_results_icons/ic_awards.png)no-repeat
+					.clients
+						background: url(../img/our_results_icons/ic_clients.png)no-repeat
+					.cup
+						width: 30px
+						height: 24px
+						background: url(../img/our_results_icons/ic_cup.png)no-repeat
+#other_services
+	display: block
+	margin-top: 120px
+	.section_named
+		margin-bottom: 60px
+	.oth_service_wrapp
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.oth_services_item
+			display: block
+			width: 30%
+			margin-bottom: 70px
+			.oth_services_flag
+				display: inline-block
+				width: 53.83px
+				height: 65px
+				@extend %borders
+				position: relative
+				float: left
+				margin: 0 28px 30px 0
+				&:hover
+					background: $orange-color
+					transition: all 0.5s
+					border: none
+				&::before,&::after
+					content: ""
+					position: absolute
+					width: 36px
+					height: 1px
+					left: 35.4px
+					border-left: 1px solid transparent
+					border-right: 1px solid transparent
+					border-bottom: 13px solid $white-color
+					border-top: 1px solid $border-color
+				&::before
+					top: 11.8px
+					transform: rotate(73deg)
+				&::after
+					top: 40px
+					width: 35px
+					transform: rotate(107deg)
+				&:hover::before,&:hover::after
+					transition: all 0.5s
+					border-bottom: 13px solid $orange-color
+					border-top: none
+			.oth_services_text
+				display: block
+				font-size: 1em
+				line-height: 60px
+				color: $text-color
+				float: left
+				text-transform: uppercase
+			.oth_services_descr
+				display: inline-block
+				color: $text-descr
+				font-size: 0.875em
+				left: 30px
+#our_team
+	display: block
+	width: 100%
+	height: auto
+	margin-top: 140px
+	.our_team_wrapp
+		display: flex
+		justify-content: space-between
+		margin: 0 -15px	
+		// flex-wrap: wrap		
+		.our_team_item
+			display: block
+			width: 100%
+			position: relative
+			.worker_1,.worker_2,.worker_3,.worker_4
+				display: flex
+				height: 350px
+				align-items: center
+				justify-content: center
+			@for $i from 1 to 5
+				.worker_#{$i}
+					background: url(../img/our_worker_#{$i}.jpg)center 0px no-repeat
+				.info_worker
+					display: flex
+					width: 65%
+					height: 155px
+					justify-content: center
+					flex-direction: column
+					background: rgba(255,114,0,.9)
+					padding: 5.5%
+					color: $white-color
+					opacity: 0
+					&:hover
+						transition: all 0.8s
+						opacity: 1
+					.worker_name,.worker_descr
+						display: block
+						line-height: 24px
+					.worker_name
+						text-transform: uppercase
+					.worker_descr
+						font-family: 'Raleway-Regular'
+						margin: 10px 0 25px 0
+					.worker_social a
+						display: inline-block
+						width: 19%
+						height: 32px
+						border: 1px solid $white-color
+						background: transparent
+						color: $white-color
+						text-align: center
+						margin-right: 2%
+						&:last-child
+							margin-right: 0	
+						&:hover
+							background: $white-color
+							transition: all 0.3s
+							color: $orange-color
+						i
+							margin-top: 20%	
+#choose_us
+	display: block
+	width: 100%
+	margin-top: 140px
+	.our_profit
+		display: block
+		width: 50%
+		margin-bottom: 20px
+		@extend %borders
+		&:last-child
+			margin-bottom: 0
+		.our_profit_wrapp
+			display: flex
+			width: 100%
+			height: 45px
+			border-bottom: 1px solid $border-color
+		.our_profit_flag
+			display: block
+			width: 45px
+			height: 45px
+			background: $fon-flag
+			margin-right: 35px
+			position: relative
+			&:hover
+				background: $orange-color
+				transition: all 0.5s
+			&::before,&::after
+				content: ''
+				position: absolute
+				left: 34px
+				width: 24px
+				height: 1px
+				border-bottom: 8px solid $fon-flag
+			&::before
+				top: 8px
+				transform: rotate(70deg)
+			&::after
+				top: 28px
+				transform: rotate(107deg)
+			&:hover::before,&:hover::after
+				border-bottom: 8px solid $orange-color
+				transition: all 0.5s
+				border-top: none 
+		.clicked
+			transform: translate(540px,0)
+			transition: transform 400ms ease-in-out
+		.our_profit_name
+			display: block
+			font-size: 0.8125em
+			line-height: 45px
+			letter-spacing: 0.5px
+			color: $text-color
+			text-transform: uppercase
+			float: left
+		.our_profit_descr
+			display: none
+			font-size: 0.875em
+			line-height: 30px
+			letter-spacing: 0.25px
+			color: $text-descr
+			padding: 20px
+			transition: all 1s 
+		.is-opened
+			display: block
+			margin-top: 25px
+			padding: 25px
+			transition: all 1s 
+#projects
+	display: block
+	width: 100%
+	margin-top: 140px
+	.project_wrapp
+		display: flex
+		height: 90px
+		align-items: center
+		justify-content: space-between
+		.section_named
+			width: 59%
+		.projects_list_wrapp
+			display: flex
+			ul li
+				display: inline-block
+				margin-right: 20px
+				font-size: 0.8em
+				line-height: 35px
+				letter-spacing: 0.5px
+				text-decoration: none
+				cursor: pointer
+				color: $text-color
+				position: relative
+				&:last-child
+					margin-right: 0px
+			ul li.active
+				color: $orange-color
+				&::before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					top: 35px 
+					left: 0
+					background: $orange-color
+	#portfolio_wrapp
+		display: block
+		@for $i from 1 to 10
+			.portfolio_items
+				display: flex
+				overflow: hidden
+				margin-bottom: 2.5%
+				width: 100%
+				.proj_#{$i}
+					display: block
+					height: 300px
+					background: url(../img/portfolio_items/proj_#{$i}.jpg)center center no-repeat
+				.proj_1 
+					width: 48.7%
+					
+					
+				span.proj_5
+					height: 650px
+				.proj_7,.proj_8,.proj_9,
+				.proj_4
+					width: 22.65%
+				
+					
+				.proj_2
+					width: 23.23%
+					margin: 0 2.5%
+				.proj_3
+					width: 23.07%
+				.proj_5
+					width: 23.45%
+					margin: 0 2.5%
+				.proj_6
+					width: 48.7%
+					margin: 2.5% 0
+#comments
+	width: 100%
+	height: 560px
+	background: url(../img/fon_quate.jpg)center center no-repeat
+	color: $white-color
+	text-align: center
+	.comments_wrapp
+		display: flex
+		width: 100%
+		height: 560px
+		background-color: rgba(0,0,0,.7)
+		.comments_flag
+			display: inline-flex
+			width: 80px
+			height: 65px
+			background: transparent
+			position: relative
+			margin-top: 100px
+			border-left: 1px solid $white-color
+			border-right: 1px solid $white-color
+			border-top: 1px solid $white-color
+			justify-content: center
+			align-items: center
+			&::before,&::after
+				content: ''
+				position: absolute 
+				height: 1px
+				border-left: 1px solid transparent
+				border-right: 1px solid transparent
+				background: $white-color
+				top: 69px
+			&::before
+				width: 42px
+				left: -1.5px
+				transform: rotate(15deg)
+			&::after
+				width: 41.5px
+				left: 38.5px
+				transform: rotate(-15deg)
+			i
+				font-size: 36px
+				line-height: 60px
+				color: $white-color
+		.comments_text
+			display: block
+			width: 90%
+			font-size: 0.875em
+			line-height: 30px
+			letter-spacing: 0.25px
+			margin: 60px 0 55px 0
+		.comment_author
+			letter-spacing: 0.5px
+			line-height: 30px
+			font-size: 0.8em
+#clients
+	display: flex
+	height: 435px
+	background: $fon-flag
+	align-items: center
+	.clients_item_wrapp
+		display: flex
+		justify-content: space-between
+		.clients_item
+			display: block
+			width: 13%
+			a
+				display: inline-block
+				width: 100%
+				height: 77px
+				opacity: 0.4
+				&:hover
+					opacity: 1
+					transition: all 0.5s
+			@for $i from 1 to 6
+				.cl_#{$i}
+					background: url(../img/clients/client_#{$i}.png)center center no-repeat
+		
+#contact_us
+	margin-top: 140px
+	.contact_us_wrapp
+		display: flex
+		.section_named
+			margin: 0 0 60px 0
+		.contact_info_wrapp
+			display: flex
+			width: 50%
+			flex-direction: column
+			position: relative
+			.contact_info_item
+				display: flex
+				margin: 0 0 10% 0
+				height: 65px
+				&::last-child
+					margin: 0 0 0 0
+				.contact_item_ic
+					display: inline-block
+					width: 7.89%
+					height: 57px
+					@extend %borders
+					position: relative
+					margin-right: 55px
+					&::before,&::after
+						content: ''
+						position: absolute
+						width: 72%
+						height: 1px
+						left: 31px
+						border-left: 1px solid transparent
+						border-right: 1px solid transparent
+						border-bottom: 1px solid #dddddd
+					&::before
+						transform: rotate(-108deg)
+						top: 13px
+					&::after
+						transform: rotate(107deg)
+						top: 41px
+				.ic_1
+					background: url(../img/ic_visit.png)60% center no-repeat
+				.ic_2
+					background: url(../img/ic_mail.png)60% center no-repeat
+				.ic_3
+					background: url(../img/ic_call.png)60% center no-repeat
+				.ic_4
+					background: url(../img/ic_work_hour.png)60% center no-repeat
+				.contact_item_text_wrapp
+					display: flex
+					flex-direction: column
+					.contact_item_name
+						display: block
+						font-size: 1em
+						line-height: 30px
+						color: $text-color
+						text-transform: uppercase
+						letter-spacing: 0.25px
+					.contact_item_descr
+						display: block
+						color: $text-descr
+						font-size: 1em
+						line-height: 30px
+						font-family: "Raleway-Regular"
+			.eyeglass
+				display: block
+				width: 42.45%
+				height: 120px
+				background: url(../img/eyeglasses.png)
+				position: absolute
+				right: 0
+				bottom: 25%
+		.leave_message_wrapp
+			width: 50%
+			display: flex
+			flex-direction: column
+			form
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+				.inputs,textarea
+					width: 42.6%
+					height: 20px
+					padding: 2.5%
+					border: 1px solid $border-color
+					font-family: "Raleway-Regular"
+					font-size: 0.8em
+					line-height: 36px
+					letter-spacing: 0.25px
+					color: $text-descr
+					margin-bottom: 3%
+				textarea
+					width: 100%
+					min-height: 165px
+					margin-bottom: 7%
+#map
+	display: flex
+	width: 100%
+	height: 160px
+	background: url(../img/fon_map.jpg)top center no-repeat	
+	text-align: center
+	margin-top: 100px	
+	.map_wrapp
+		width: inherit
+		height: inherit
+		background: $orange-color
+		opacity: 0.9
+		align-items: center
+		display: flex
+		justify-content: center
+		.map_text
+			color: $white-color
+			text-transform: uppercase
+			font-size: 1em
+			line-height: 36px
+footer
+	display: block
+	width: 100%
+	background: $footer-bg
+	margin-bottom: 2%
+	padding-top: 75px
+	.footer_section_wrapp
+		display: flex
+		justify-content: space-between
+		.footer_section
+			display: block
+			width: 23.7%
+			height: auto
+			margin-right: 1.2%
+			margin-bottom: 85px
+			&:last-child
+				margin-right: 0
+			.logo
+				display: block
+				width: 129px
+				height: 50px
+				background: url(../img/logo.png)no-repeat
+				margin-bottom: 20px
+			.logo_descr
+				font-size: 0.8em
+				line-height: 30px
+				letter-spacing: 0.25px
+				color: $footer-mnu
+				font-family: "Raleway-Regular"
+			.f_section_name
+				display: block
+				font-size: 1em
+				line-height: 24px
+				letter-spacing: 0.5px
+				color: $white-color
+				text-transform: uppercase
+				position: relative
+				&::before,&::after
+					content: ''
+					position: absolute
+					top: 30px
+					left: 0
+					height: 1px
+					background: rgba(153,153,153,.5)
+					width: 100%
+				&::after
+					height: 2.5px
+					background: $orange-color
+					width: 11.11%
+			.f_nav_mnu_wrapp
+				display: flex
+				ul
+					width: 50%
+					margin-top: 20px
+					li a.f_mnu,.letter_info
+						font-size: 0.8em
+						line-height: 30px
+						letter-spacing: 0.25px
+						color: $footer-mnu
+						text-decoration: none
+						font-family: "Raleway-Regular"
+						&:hover
+							color: $orange-color
+							transition: all 0.3s
+			.letter_info
+				display: block
+				width: 100%
+				margin-top: 20px
+				font-size: 0.8em
+				line-height: 30px
+				letter-spacing: 0.5px
+				color: $footer-mnu
+				font-family: "Raleway-Regular"
+			input[type="email"]
+				width: 94%
+				background: transparent
+				border: 1px solid $footer-mnu
+				margin-top: 25px
+				padding: 2.5%
+				font-size: 0.8em
+				line-height: 1px
+				letter-spacing: 0.25px
+				color: $footer-mnu
+				font-family: "Raleway-Regular"
+	.copyright
+		display: flex
+		width: 100%
+		background: $black-color
+		height: 90px
+		.copyright_wrapp
+			display: flex
+			justify-content: space-between
+			align-items: center
+			height: 90px
+		.copy_text
+			display: block
+			font-size: 0.8em
+			line-height: 36px
+			letter-spacing: 0.25px
+			color: $copyright-color
+			font-family: "Raleway-Regular"
+		.social_ic_wrapp
+			display: block
+			width: 16.52%
+			.soc_ic
+				display: inline-block
+				width: 8%
+				margin-right: 18.65%
+				&:last-child
+					margin-right: 0
+				i
+					color: $white-color
+					font-size: 1em
+					&:hover
+						color: $orange-color
+						transition: all 0.3s
+///			

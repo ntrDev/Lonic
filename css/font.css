@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Raleway-Regular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Raleway-Regular/RalewayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular/RalewayRegular.ttf") format("truetype"); }
+
+/*# sourceMappingURL=font.css.map */
